@@ -26,7 +26,7 @@ public class AnimalDAO extends Conexion {
 
         // Si el animal pasado es nulo no haremos nada
         if (animal != null) {
-            String sql = "INSERT INTO circo.animales (nombre, tipo, anhos, peso, estatura, nombre_atraccion, nombre_pista) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO animales (nombre, tipo, anhos, peso, estatura, nombre_atraccion, nombre_pista) VALUES (?, ?, ?, ?, ?, ?, ?)";
             try {
 
                 PreparedStatement sentencia = conexion.prepareStatement(sql);

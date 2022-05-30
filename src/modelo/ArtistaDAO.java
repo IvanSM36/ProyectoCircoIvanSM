@@ -23,7 +23,7 @@ public class ArtistaDAO extends Conexion {
         // Si el artista pasado es nulo no haremos nada
         if (artista != null) {
             Connection conexion = getConexion();
-            String sql = "INSERT INTO circo.artistas (nif, apellidos, nombre, nif_jefe)"
+            String sql = "INSERT INTO artistas (nif, apellidos, nombre, nif_jefe)"
                     + "			   VALUES ( ?,      ?,        ?,      ?    )";
             try {
                 PreparedStatement sentencia = conexion.prepareStatement(sql);
